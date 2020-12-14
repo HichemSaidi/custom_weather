@@ -1,14 +1,76 @@
-.btn-custom{
-    background-color: #8744f0;
-    color: white;
-    border:none;
-    border-radius: 30px;
-    padding: 0.5em;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .Daily{
-    background-color: #212731!important;
-    color: white;
 
+.dailybox {
+  background-color: #212731;
+
+}
+
+
+
+/*Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  h1{
+    font-size: 40px !important;
+
+}
+.btn-custom{
+  display: none;
+}
+   .row{
+       text-align: center;
+   }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+  
+
+  .btn-custom{
+      display: none;
   }
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+   h1{
+       font-size: 2vw !important;
+
+   }
+   .row{
+       vertical-align: text-bottom;
+       font-size: 1.5vw;
+   }
+
+   
+   
+
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+   h1{
+       font-size: 3vw !important;
+   }
+   .row{
+       vertical-align: text-bottom;
+       font-size: 1.5vw;
+       font-weight: 500;
+   }
+   
+   
+}
+
+
+
+.btn-custom{
+   text-align: center;
+   background-color: #8744f0;
+   color: white;
+   border:none;
+   border-radius: 30px;
+   padding: 0.5em 1em;
+   
+ }
+ .nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}

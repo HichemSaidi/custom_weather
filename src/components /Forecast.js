@@ -7,11 +7,12 @@ function Forecast(props){
    
     
         return (     
-            <div className='col text-center bubble'>
-                <div className='blup'>
+            <div className='col-xl-3 col-lg-3 col-md-6 col-sm-6 col-8 text-center bubble mt-3'>
+                <div className='square'>
                 <img src={`http://openweathermap.org/img/wn/${props.gly}@2x.png`}></img><br></br>
                  <p>{props.dsc}</p>
                  </div>
+                 
             </div>
         )
  

@@ -2,19 +2,18 @@
 
     color: white;
     position: relative;
-    width: 20vw;
-    height: 20vw;
-    width: 16.66%!important
+    
      
 
 }
-.blup{
+.square{
     background-color: #212731!important;
-    padding: 2em;
     border-radius: 10px;
+  padding: 2.5vw;
+   
 
 }
-.blup:hover{
+.square:hover{
     background: rgb(113,237,242);
 background: linear-gradient(128deg, rgba(113,237,242,1) 26%, rgba(83,90,230,1) 86%);
     color: black;

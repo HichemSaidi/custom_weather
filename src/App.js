@@ -3,6 +3,7 @@ import './App.css';
 import Daily from './components /Daily'
 import axios from 'axios';
 import Forecast from './components /Forecast';
+
 import { CSSTransition } from 'react-transition-group';
 
 //url for first request
@@ -62,7 +63,7 @@ handleSubmit = () => {
             axios.get(lien)
             .then(res=> {
               const array = res.data.daily
-              const Forecast = array.slice(0,5)
+              const Forecast = array.slice(0,4)
               this.setState({Forecast})
         
             })
@@ -107,7 +108,7 @@ render() {
   return (
     
     <div className="container bg-custom2 mt-5 ">
-          <div className=""> <p className="heading">Weather Forecast For You</p>
+          <div className="Display-6"> <h2 className>Weather Forecast For You</h2>
                     <p className="mt-3">Trandings:<a href="https://example.com"> New york, London, Tel Aviv, Amsterdam, Tokyo, Madrid</a></p>
                     <input className="form-control mt-5" type="text" onChange={this.handleChange} onKeyDown={this.onEnterPress} placeholder="Search city" />
           </div>
@@ -128,10 +129,10 @@ render() {
     
     <CSSTransition timeout={4000} classNames="fade" in={this.state.isSubmitted}>
               <div class="container mt-5">
-             {isSubmitted ?  <h1>Weekly Forecast</h1> : ""}   
+             {isSubmitted ?  <h1 className="Display-4">  Weekly Forecast</h1> : ""}   
                
                    
-                      <div class="row mt-5">
+                      <div class="row mt-5 justify-content-center">
                         {Forecastdays}
                         </div>
                     </div>
