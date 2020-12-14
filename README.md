@@ -1,5 +1,5 @@
 # Demo Custom Weather App GIF
-![](img/custom_forecast.gif)
+![](img/weather_forecast.gif)
 
 
 # Getting Started with Create React App
