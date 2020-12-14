@@ -1,0 +1,14 @@
+.btn-custom{
+    background-color: #8744f0;
+    color: white;
+    border:none;
+    border-radius: 30px;
+    padding: 0.5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .Daily{
+    background-color: #212731!important;
+    color: white;
+
+  }
